@@ -1,6 +1,5 @@
 include ../bemto/bemto.pug
 include ../mixins/mixins
-include ../blocks/header/header
 include ../blocks/footer/footer
 include ../blocks/scripts/scripts
 
@@ -13,11 +12,12 @@ include ../blocks/scripts/scripts
 
 
 doctype html
-html(lang='ru')
+html(lang='en')
   include ../blocks/head/head
   body
-    +header()
+    .svg-sprite
+      include ../blocks/sprite/svg.svg
     block content
     +footer()
     block scripts
-    +scripts(['https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', 'build.js'])
+    +scripts(['build.js'])

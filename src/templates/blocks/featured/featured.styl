@@ -1,0 +1,81 @@
+.featured
+  margin-top 50px
+
+.panel
+  margin-left 98px
+  display flex
+  justify-content space-between
+
+.btn-explore
+  cursor pointer
+  font-size 18px
+  font-weight 700
+  width 250px
+  height 45px
+  letter-spacing 3px
+  text-transform uppercase
+  background-color transparent 
+  background url("/assets/images/arrow.png") no-repeat 220px 15px
+
+.switcher
+  list-style none
+  li
+    display inline
+    font-size 36px
+    font-weight 700
+    padding 0 15px 10px 15px
+    border-bottom 1px solid #6c6c6c
+    a
+      color #6c6c6c
+      text-decoration none
+  &__active
+    padding-bottom 8px !important
+    border-bottom 3px solid #212121 !important
+  &__active a
+    color #212121 !important
+
+.products
+  margin 50px 0 0 98px
+  display flex
+
+.product
+  width 270px
+  height 270px
+  position relative
+  margin-right 30px
+  border 1px solid rgb(217, 222, 225)
+  &__overlay
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    text-align center
+    background-color white
+    opacity 0.9
+    display none
+    border 1px solid #9c9c9c
+    h3
+      margin-top 19px
+      color #212121
+      font-weight 700
+      font-size 22px
+    h5
+      color #6c6c6c
+      margin 23px 10px 0 10px
+      text-overflow ellipsis
+      max-height 40px
+      overflow hidden
+  &__btn-go
+    margin 62px 111px 0 111px
+    cursor pointer
+    border-radius 50%
+    width 48px
+    height 48px
+    background url("/assets/images/arrow.png") no-repeat center
+    background-size 12px 18px
+    box-shadow 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+  &:hover .product__overlay
+    position absolute
+    left 0
+    top 0
+    display block

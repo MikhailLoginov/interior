@@ -1,4 +1,48 @@
+header
+  position absolute
+  width 100%
+  z-index 1
+
 .header
-  padding 20px
-  padding 20px
-  height calc(2 * 100px)
+  padding 63px 167px 0 98px
+  display flex
+  justify-content space-between
+
+nav 
+  display flex
+  a img 
+    margin 10px 0 0 0
+
+.nav-menu
+  list-style none
+  li
+    list-style-type none
+    float left
+    text-align center
+    width 100px
+    &:first-child
+      width 80px
+    &:nth-child(2)
+      width 120px
+    &:nth-child(3)
+      width 100px
+    &:nth-child(4)
+      width 130px
+    &:nth-child(5)
+      width 105px
+    a
+      padding 0 15px 10px 15px
+      width 100%
+      text-decoration none
+      color #8c8c8c
+      font-size 14px
+      font-weight 300
+      text-transform uppercase
+      text-align center
+      letter-spacing .6px
+      &:hover
+        border-bottom 3px solid #212121
+        color #212121
+        // text-shadow 0 0 1px #212121, 0 0 1px #212121, 0 0 1px #212121
+        // letter-spacing .24px
+        font-weight 700
