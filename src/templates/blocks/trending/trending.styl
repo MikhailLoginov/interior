@@ -1,12 +1,25 @@
 .trending
   margin-top 112px
+  &__panel
+    margin 0 76px 0 98px
+    +below(768px)
+      margin 0 2px 0 10px
+    display flex
+    justify-content space-between
+  .btn-explore
+    margin 9px 0 0 1px
+    +below(768px)
+      margin-top -5px
   &__products
     display flex
     flex-wrap wrap
-    margin 35px 99px 50px 99px
-    justify-content space-between
+    margin 35px 84px 50px 84px
+    +below(768px)
+      margin 35px 10px 50px 10px
+    justify-content space-around
 
 .product
+  position relative
   width 370px
   height 370px
   margin 15px 0 15px 0
@@ -22,4 +35,44 @@
     background url("/assets/images/product-5.jpg") no-repeat
   &.product-6
     background url("/assets/images/product-6.jpg") no-repeat
+  &__overlay
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    text-align center
+    background-color white
+    opacity 0.9
+    display none
+    border 1px solid #9c9c9c
+    h3
+      margin-top 22px
+      color #212121
+      font-weight 700
+      font-size 22px
+    h5
+      color #6c6c6c
+      margin 23px 15px 0 15px
+      text-overflow ellipsis
+      max-height 50px
+      overflow hidden
+  &__btn-go
+    margin 82px 111px 0 111px
+    cursor pointer
+    border-radius 50%
+    width 48px
+    height 48px
+    background url("/assets/images/arrow.png") no-repeat center
+    background-size 12px 18px
+    box-shadow 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+    &:hover
+      background-color rgba(33, 33, 33, 0.1)
+    &:active
+      background-color rgba(33, 33, 33, 0.25)
+    transition all .25s
+  &:hover .product__overlay
+    position absolute
+    left 0
+    top 0
+    display block
     

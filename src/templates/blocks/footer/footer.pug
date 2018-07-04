@@ -22,7 +22,9 @@ mixin footer()
           +e.stay-in-touch
             h3 Let's stay in touch!
             p Subscribe to know about our latest news, products and special offers just for subscribers.
-            INPUT(type="email", placeholder="your email address")
+            +b.email-input
+              +e.INPUT(type="email", placeholder="your email address")
+              +e.BUTTON.btn-submit
         +b.bot-panel
           +e.copyright
             | &copy; COPYRIGHT - INTERIOR 2016. ALL RIGHTS RESERVED.

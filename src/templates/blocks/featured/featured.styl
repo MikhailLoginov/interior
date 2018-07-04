@@ -1,38 +1,63 @@
 .featured
   margin-top 112px
 
-.panel
-  margin 0 76px 0 98px
-  display flex
-  justify-content space-between
+  &__panel
+    margin 0 76px 0 98px
+    +below(768px)
+      margin 0 2px 0 10px
+    display flex
+    justify-content space-between
 
-.switcher
-  list-style none
-  li
-    display inline
-    font-weight 700
-    padding 0 22px 17px 8px
-    border-bottom 1px solid #6c6c6c
-    a
-      font-size 36px
-      color #6c6c6c
-      text-decoration none
-      letter-spacing -1px
-  &__active
-    padding 0 15px 15px 6px !important
-    border-bottom 3px solid #212121 !important
-  &__active a
-    color #212121 !important
+  &__switcher
+    list-style none
+    li
+      display inline
+      font-weight 700
+      padding 0 22px 17px 8px
+      border-bottom 1px solid #6c6c6c
+      +below(600px)
+        padding 0 10px 10px 2px
+      a
+        font-size 36px
+        +below(600px)
+          font-size 20px
+        color #6c6c6c
+        text-decoration none
+        letter-spacing -1px
+        &:hover
+          color rgb(156, 156, 156) !important
+        &:active
+          color rgb(217, 222, 225) !important
+      &.active
+        padding 0 15px 15px 6px !important
+        border-bottom 3px solid #212121 !important
+        +below(600px)
+          padding 0 10px 8px 2px !important
+      &.active a
+        color #212121 !important
+        &:hover
+          color rgb(108, 108, 108) !important
+        &:active
+          color rgb(217, 222, 225) !important
+  .btn-explore
+    +below(600px)
+      margin 0
 
-.products
-  margin 50px 0 0 98px
-  display flex
+  &__products
+    margin 22px 67px 0 98px
+    +below(768px)
+      margin 22px 10px 0 10px
+    display flex
+    flex-wrap wrap
+    justify-content space-around
 
 .small-product
   width 270px
   height 270px
   position relative
-  margin-right 28px
+  margin 28px 28px 0 0
+  +below(768px)
+    margin 28px 0 0 0
   border 1px solid rgb(217, 222, 225)
   &__overlay
     width 100%
@@ -64,6 +89,11 @@
     background url("/assets/images/arrow.png") no-repeat center
     background-size 12px 18px
     box-shadow 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+    &:hover
+      background-color rgba(33, 33, 33, 0.1)
+    &:active
+      background-color rgba(33, 33, 33, 0.25)
+    transition all .25s
   &:hover .small-product__overlay
     position absolute
     left 0

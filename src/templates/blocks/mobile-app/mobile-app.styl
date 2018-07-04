@@ -1,12 +1,14 @@
 .mobile-app
-  background url('/assets/images/back-img.jpg') no-repeat
+  background url('/assets/images/back-img.jpg') no-repeat center
   height 516px
   margin-top 91px
   &__content
     display flex
     flex-direction column
     padding 121px 0 0 97px
-    width 458px
+    +below(768px)
+      padding 121px 0 0 10px
+    max-width 458px
     h1, h3
       text-transform uppercase
     h1

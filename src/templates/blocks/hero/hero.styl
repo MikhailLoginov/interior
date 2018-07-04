@@ -1,12 +1,14 @@
 .hero
   position relative
-  background-image url('/assets/images/slider-img.jpg')
+  background url('/assets/images/slider-img.jpg') center
   height 800px
   &__content
     display flex
     flex-direction column
     padding 369px 0 0 98px
-    width 490px
+    max-width 490px
+    +below(768px)
+      padding-left 10px
     h1, h3
       text-transform uppercase
     h5
@@ -20,9 +22,9 @@
     display flex
     align-items center
     justify-content center
-    cursor pointer
 
 .icon-navi
+  cursor pointer
   width 52px
   height 52px
   &:first-child

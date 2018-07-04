@@ -7,14 +7,24 @@ header
   padding 63px 167px 0 98px
   display flex
   justify-content space-between
+  flex-wrap wrap
+  +below(1100px)
+    padding 63px 15px 0 98px
+    a img
+      margin-bottom 30px
+  +below(768px)
+    padding 63px 10px 0 10px
 
 nav 
   display flex
 
 .nav-menu
   list-style none
+  +below(600px)
+    display flex
+    flex-direction column
   li
-    list-style-type none
+    // list-style-type none
     float left
     text-align center
     width 100px
@@ -28,6 +38,8 @@ nav
       width 122px
     &:nth-child(5)
       width 118px
+      +below(600px)
+        width 108px
     a
       padding 0 15px 10px 15px
       width 100%
@@ -38,8 +50,14 @@ nav
       text-transform uppercase
       text-align center
       letter-spacing 1.1px
+      transition all .25s
       &:hover
         border-bottom 3px solid #212121
         color #212121
         font-weight 700
-        font-size 14px
+        +below(600px)
+          border-bottom none
+      &:active
+        border-bottom 3px solid rgb(217, 222, 225)
+        color rgb(217, 222, 225)
+        font-weight 700

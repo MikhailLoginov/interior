@@ -1,13 +1,15 @@
 .slider
   margin-top 105px
   position relative
-  background url('/assets/images/slider.jpg') no-repeat
+  background url('/assets/images/slider.jpg') no-repeat center
   height 800px
   &__content
     display flex
     flex-direction column
-    padding 282px 0 0 98px
-    width 458px
+    padding 284px 0 0 98px
+    +below(768px)
+      padding 284px 0 0 10px
+    max-width 468px
     h1, h3
       text-transform uppercase
     h3
