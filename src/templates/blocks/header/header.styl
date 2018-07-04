@@ -13,7 +13,7 @@ header
     a img
       margin-bottom 30px
   +below(768px)
-    padding 63px 10px 0 10px
+    padding 20px 10px 0 10px
 
 nav 
   display flex
@@ -24,7 +24,6 @@ nav
     display flex
     flex-direction column
   li
-    // list-style-type none
     float left
     text-align center
     width 100px
@@ -49,6 +48,8 @@ nav
       font-weight 500
       text-transform uppercase
       text-align center
+      +below(600px)
+        text-align left
       letter-spacing 1.1px
       transition all .25s
       &:hover
