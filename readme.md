@@ -1,5 +1,9 @@
 ## Interior HTML Pages
 
+2 pages are ready:
+/index.html
+/product.html
+
 # Requirements
 
 - node.js
@@ -31,8 +35,6 @@
 
 ## ToDo List:
 
-- hover / active effects
-- svg
-- overlays for all products
-- responsive / mobile versions
-- other pages!
+- svg buttons for slider
+- to cut social media buttons
+- 2 more pages inc!
