@@ -8,10 +8,18 @@
       padding 250px 0 44px 10px
 
   &__switcher
+    position relative
     list-style none
     margin 62px 0 0 100px
     letter-spacing 2px
     transition all .25s
+    &:after
+      content ""
+      border-bottom 1px solid #6c6c6c
+      position absolute
+      bottom 0
+      left 0
+      width 300px
     +below(768px)
       margin 50px 0 0 10px
     li
