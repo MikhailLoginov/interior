@@ -1,24 +1,36 @@
-## Interior HTML Pages
+# Interior HTML Pages
+
+This project is a training HTML project from prepeared designs
+
+## Current progress
 
 2 pages are ready:
 /index.html
 /product.html
 
-# Requirements
+## ToDo List:
+
+- svg buttons for slider
+- to cut social media buttons
+- 2 more pages are incoming!
+
+# Local setup
+
+1. Requirements
 
 - node.js
 - npm
 
-# Installation
+2. Installation
 
 - `npm install`
 
-# Local development
+3. Local development
 
 - `npm start`
 - project should be available at http://localhost:3000
 
-# Technologies
+## Technologies
 
 - pug
 - stylus
@@ -26,15 +38,9 @@
 - BEM
 - minificators, optimizators, preprocessors via gulp modules
 
-# Structure
+## Structure
 
 - src/templates/pages = pages
 - src/templates/blocks = blocks for pages
 - src/assets/styles = main styles for whole project; local styles are inside blocks
 - complied project is available at dist/
-
-## ToDo List:
-
-- svg buttons for slider
-- to cut social media buttons
-- 2 more pages inc!
