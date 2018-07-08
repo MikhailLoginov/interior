@@ -10,17 +10,24 @@
   &__content
     display flex
     justify-content space-around
-    margin 150px 88px 150px 88px
+    flex-wrap wrap
+    margin 57px 83px 112px 83px
+    +below(768px)
+      margin 67px 0 122px 0
   
 .contact-card
-  width 360px
-  height 360px
+  width 368px
+  height 368px
   text-align center
   border 1px solid #9c9c9c
+  margin 10px
   img
-    margin 50px 0 20px 0
+    margin 47px 0 26px 0
   h3
+    font-size 20px
     color #212121
+    letter-spacing 0.6px
+    margin-bottom 12px
   .ttl
     font-weight 700
-    margin-top 8px
+    margin 6px 0 -2px 0

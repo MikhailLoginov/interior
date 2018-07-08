@@ -13,6 +13,7 @@ This project is a training HTML project from prepeared designs
 
 - last page is coming soon!
 - improve footer position
+- add fontawesome
 
 # Local setup
 
