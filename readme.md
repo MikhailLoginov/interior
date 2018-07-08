@@ -4,15 +4,14 @@ This project is a training HTML project from prepeared designs
 
 ## Current progress
 
-3 pages are ready:
+All 4 pages are ready:
 /index.html
 /products.html
 /contacts.html
+/product-details.html
 
 ## ToDo List:
 
-- last page is coming soon!
-- improve footer position
 - add fontawesome
 
 # Local setup
